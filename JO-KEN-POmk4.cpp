@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>// necessário p/ as funções rand() e srand()
-#include <time.h>//necessário p/ função time()
+#include <stdlib.h>// necessÃ¡rio p/ as funÃ§Ãµes rand() e srand()
+#include <time.h>//necessÃ¡rio p/ funÃ§Ã£o time()
 #include <locale.h>
 
 int main(void)
@@ -20,7 +20,7 @@ int main(void)
 	 	
 	 	// PLACAR 
 	 	printf ("-------------------------------------------------------------------\n");
-		printf ("|Seu placar é: %d               X             Placar adversario: %d |\n\n",placar_usr,placar_maq);
+		printf ("|Seu placar Ã©: %d               X             Placar adversario: %d |\n\n",placar_usr,placar_maq);
 		printf ("-------------------------------------------------------------------\n\n");
 	 	
 	 	// ESCOLHA DO JOGADOR
@@ -30,13 +30,13 @@ int main(void)
  		scanf ("%d",&esc_usu);
  		
 		switch (esc_usu) {
- 			case 0: printf ("\nVocê escolheu: Pedra\n\n");
+ 			case 0: printf ("\nVocÃª escolheu: Pedra\n\n");
  			break ;
- 			case 1: printf ("\nVocê escolheu: Papel\n\n");
+ 			case 1: printf ("\nVocÃª escolheu: Papel\n\n");
  			break ;
- 			case 2: printf ("\nVocê escolheu: Tesoura\n\n");
+ 			case 2: printf ("\nVocÃª escolheu: Tesoura\n\n");
 	 		break ;
-	 		default : printf ("\nVocê deve escolher 0, 1 ou 2 !!\n\n");
+	 		default : printf ("\nVocÃª deve escolher 0, 1 ou 2 !!\n\n");
 	 		break;}
 	 		
 	// ESCOLHA ALEATORIA 
@@ -59,30 +59,30 @@ int main(void)
 			if (esc_usu==esc_ale)
 				printf ("Empate");
 			else	if ((esc_usu==0)&&(esc_ale==1)){
-						printf ("Perdeu");
-						placar_maq++;}
-					else {
-						printf ("Ganhou");
-		 				placar_usr++;}
+					printf ("Perdeu");
+					placar_maq++;}
+				else {
+					printf ("Ganhou");
+		 			placar_usr++;}
 		 				
 	 	if (esc_usu==1)			
 		 	if (esc_usu==esc_ale)
 				printf ("Empate");
 			else	if ((esc_usu==1)&&(esc_ale==2)){
-						printf ("Perdeu");
-						placar_maq++;}
-					else {
-						printf ("Ganhou");
-		 				placar_usr++;}
+					printf ("Perdeu");
+					placar_maq++;}
+				else {
+					printf ("Ganhou");
+					placar_usr++;}
 		if (esc_usu==2)			
 			if (esc_usu==esc_ale)
 				printf ("Empate");
 			else	if ((esc_usu==2)&&(esc_ale==0)){
-						printf ("Perdeu");
-						placar_maq++;}
-					else {
-						printf ("Ganhou");
-		 				placar_usr++;}	
+					printf ("Perdeu");
+					placar_maq++;}
+				else {
+					printf ("Ganhou");
+	 				placar_usr++;}	
 		 		
 	 	printf ("\n\n----------------------------------------------------\n\n");
 	 
@@ -91,14 +91,13 @@ int main(void)
   }while (x==1);
  	
 	 // PLACAR ESCRITO
-	 if (placar_usr == placar_maq)
-	 	  printf ("O jogo empatou!!  :|\n\n\n");
-	 	  else if (placar_usr > placar_maq)
-	 	      printf ("Você Ganhou!!  :D\n\n\n");
-	 	        else 
-	 	          printf ("Você Perdeu!!  D:\n\n\n");
-	 	          
-	 	          
+	if (placar_usr == placar_maq)
+	 	printf ("O jogo empatou!!  :|\n\n\n");
+	else if (placar_usr > placar_maq)
+		printf ("VocÃª Ganhou!!  :D\n\n\n");
+	else 
+		printf ("VocÃª Perdeu!!  D:\n\n\n");
+	
 	printf ("Programa simples feito por Leo Prates!! :D :D \n\n") ;
 	system ("PAUSE");
   return 0;
